@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ke.co.noel.hao.customfonts.MyBoldTextView
+            android:id="@+id/distance_from"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:gravity="center"
+            android:text="From" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#1b1b1b"
+                android:alpha="0.6"/>
+
+            <ke.co.noel.hao.customfonts.MyBoldTextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="Getting route... Please wait" />
+
+            <ke.co.noel.hao.customfonts.MyBoldTextView
+                android:id="@+id/distance_to"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="To" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ke.co.noel.hao.DistanceActivity" />
+</FrameLayout>

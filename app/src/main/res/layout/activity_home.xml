@@ -1,0 +1,222 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                map:toolbarId="@+id/toolbar"
+                map:layout_scrollFlags="scroll">
+
+                <LinearLayout
+                    map:layout_scrollFlags="scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/map_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:elevation="1dp"
+                            map:cardCornerRadius="3dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <fragment
+                                    android:id="@+id/map"
+                                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="320dp"
+                                    tools:context="ke.co.noel.hao.home.HomeActivity" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_below="@+id/map"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/four_stars"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="20dp"
+                                            android:layout_marginTop="10dp"
+                                            android:src="@drawable/ic_location_on_blue_24px" />
+
+                                        <ke.co.noel.hao.customfonts.MyBoldTextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="15dp"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="4 Stars"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:alpha="0.3"
+                                        android:layout_width="1dp"
+                                        android:background="#9e9e9e"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginTop="8dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/three_stars"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="20dp"
+                                            android:layout_marginTop="10dp"
+                                            android:src="@drawable/ic_location_on_magenta_24px" />
+
+                                        <ke.co.noel.hao.customfonts.MyBoldTextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="3 Stars"
+                                            android:textStyle="bold" />
+
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:background="#9e9e9e"
+                                        android:alpha="0.3"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="8dp"
+                                        android:layout_marginTop="8dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/two_stars"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="20dp"
+                                            android:layout_marginTop="10dp"
+                                            android:src="@drawable/ic_location_on_yellow_24px" />
+
+                                        <ke.co.noel.hao.customfonts.MyBoldTextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="2 Stars"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_width="match_parent" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_rv"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            map:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#951b1b1b"
+        android:clickable="true">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.CubeGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="#FFFFFF"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="#1b1b1b"
+            android:orientation="horizontal">
+
+            <ke.co.noel.hao.customfonts.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center_vertical"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Retrieving content..."
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.jetradar.desertplaceholder.DesertPlaceholder
+        android:visibility="gone"
+        android:id="@+id/placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dp_buttonText="retry"
+        app:dp_message="Please turn on your location to continue using this app."/>
+
+</FrameLayout>
+

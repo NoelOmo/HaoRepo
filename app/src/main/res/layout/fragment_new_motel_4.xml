@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/rv_amenities"/>
+
+    <ke.co.noel.hao.customfonts.MyBoldTextView
+        android:layout_width="match_parent"
+        android:id="@+id/the_title"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_above="@id/rv_amenities"
+        android:textSize="18sp"
+        android:text="What amenities do you offer?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:text="back"
+            android:id="@+id/btn_back"/>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#a2a2a2"
+                android:text="next"
+                android:id="@+id/btn_next"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f15524"
+                android:text="done"
+                android:id="@+id/btn_done"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

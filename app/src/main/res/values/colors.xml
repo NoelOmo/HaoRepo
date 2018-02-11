@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="onboarding_bg">#FFFFFF</color>
+    <color name="onboarding_buttons">#D9D9D9</color>
+    <color name="deep_purple">#4CAF50</color>
+    <color name="icon_text_color">#757575</color>
+
+    <color name="colorPrimary">#f8f8f8</color>
+    <color name="colorPrimaryDark">#201b1b1b</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="Tex">#404547</color>
+    <color name="White">#ffffff</color>
+
+    <color name="bglist">#f8f8f8</color>
+    <color name="boticon">#999ba4ab</color>
+    <color name="boticoncolor">#24bdb6</color>
+
+    <color name="indicator_unselected">#999999</color>
+    <color name="indicator_selected">#545354</color>
+
+    <color name="cardview_dark_background">#ff424242</color>
+    <color name="cardview_light_background">#ffffffff</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="category_textcolour">#404547</color>
+    <color name="cattextcolour">#ffffff</color>
+    <color name="colorbutton">#ff5254</color>
+    <color name="colordevider">#f1f2f4</color>
+    <color name="colorhint">#a9aaac</color>
+    <color name="colortext">#100b20</color>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_google_signin_btn_text_dark_disabled">#1f000000</color>
+    <color name="common_google_signin_btn_text_light_default">#90000000</color>
+    <color name="common_google_signin_btn_text_light_disabled">#1f000000</color>
+    <color name="common_google_signin_btn_text_light_focused">#90000000</color>
+    <color name="common_google_signin_btn_text_light_pressed">#de000000</color>
+    <color name="common_plus_signin_btn_text_dark_disabled">#ffaaaaaa</color>
+    <color name="common_plus_signin_btn_text_light_default">#ff737373</color>
+    <color name="common_plus_signin_btn_text_light_disabled">#ffaaaaaa</color>
+    <color name="common_plus_signin_btn_text_light_focused">#ff737373</color>
+    <color name="common_plus_signin_btn_text_light_pressed">#de000000</color>
+
+    <color name="divider">#677174</color>
+    <color name="droverbackground">#29363b</color>
+    <color name="droverbackground1">#354348</color>
+    <color name="drovercolour">#6e6e6d</color>
+    <color name="global_color_green_accent">#ffc107</color>
+    <color name="global_color_green_control_activated">#ffc107</color>
+    <color name="global_color_green_primary">#4caf50</color>
+    <color name="global_color_green_primary_dark">#388e3c</color>
+    <color name="global_color_green_primary_light">#c8e6c9</color>
+    <color name="global_color_primary_light">#f5f5f5</color>
+    <color name="green">#5ccc78</color>
+
+    <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
+    <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
+    <color name="iconcolour">#9ba4ab</color>
+    <color name="light_green">#1bac94</color>
+
+    <color name="red">#ea495f</color>
+
+    <color name="strok">#e4e5ea</color>
+
+    <color name="textSub">#76818a</color>
+    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
+    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
+    <color name="wallet_dim_foreground_holo_dark">#bebebe</color>
+    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
+    <color name="wallet_dim_foreground_inverse_holo_dark">#323232</color>
+    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
+    <color name="wallet_hint_foreground_holo_dark">#808080</color>
+    <color name="wallet_hint_foreground_holo_light">#808080</color>
+    <color name="wallet_holo_blue_light">#ff33b5e5</color>
+    <color name="wallet_link_text_light">#0000ee</color>
+    <color name="white_my">#ffffff</color>
+    <color name="yellow">#f8d64e</color>
+
+</resources>

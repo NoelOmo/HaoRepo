@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="56dp"
+            tools:context="ke.co.noel.hao.DetailsView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/details_image"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="300dp"-->
+                    <!--android:src="@drawable/hao_icon" />-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="4.5"
+                        android:stepSize="0.1" />
+
+                    <ke.co.noel.hao.customfonts.MyTextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="June 16"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <ke.co.noel.hao.customfonts.MyBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="20sp" />
+
+                    <ke.co.noel.hao.customfonts.MyTextView
+                        android:id="@+id/details_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="60dp"
+                        android:text="Wait"
+                        android:textColor="#1b1b1b"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+
+                <ke.co.noel.hao.customfonts.MyBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Comments"
+                    android:textSize="20sp" />
+
+                <ke.co.noel.hao.customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                android:text="No Comments. Be the first to comment"
+                android:textColor="#1b1b1b"
+                android:textSize="14dp" />
+
+<!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginEnd="16dp"-->
+                    <!--android:layout_marginLeft="16dp"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:layout_marginStart="16dp"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="John Doe"-->
+                                <!--android:textColor="#1b1b1b"-->
+                                <!--android:textSize="12dp" />-->
+
+                            <!--<RatingBar-->
+                                <!--android:id="@+id/ratingBar2"-->
+                                <!--style="@style/Widget.AppCompat.RatingBar.Small"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:isIndicator="true"-->
+                                <!--android:numStars="1"-->
+                                <!--android:rating="1"-->
+                                <!--android:stepSize="0.1" />-->
+
+                            <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="(4.5)"-->
+                                <!--android:textSize="12dp" />-->
+                        <!--</LinearLayout>-->
+
+                        <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:gravity="end"-->
+                            <!--android:text="July 10"-->
+                            <!--android:textSize="12sp" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="4dp"-->
+                        <!--android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."-->
+                        <!--android:textSize="12dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_marginBottom="6dp"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:alpha="0.7"-->
+                    <!--android:background="#9e9e9e" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginEnd="16dp"-->
+                    <!--android:layout_marginLeft="16dp"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:layout_marginStart="16dp"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Jane Doe"-->
+                                <!--android:textColor="#1b1b1b"-->
+                                <!--android:textSize="12dp" />-->
+
+                            <!--<RatingBar-->
+                                <!--style="@style/Widget.AppCompat.RatingBar.Small"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:isIndicator="true"-->
+                                <!--android:numStars="1"-->
+                                <!--android:rating="1"-->
+                                <!--android:stepSize="0.1" />-->
+
+                            <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="(3)"-->
+                                <!--android:textSize="12dp" />-->
+                        <!--</LinearLayout>-->
+
+                        <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:gravity="end"-->
+                            <!--android:text="July 10"-->
+                            <!--android:textSize="12sp" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="4dp"-->
+                        <!--android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."-->
+                        <!--android:textSize="12dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_marginBottom="6dp"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:alpha="0.7"-->
+                    <!--android:background="#9e9e9e" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginEnd="16dp"-->
+                    <!--android:layout_marginLeft="16dp"-->
+                    <!--android:layout_marginRight="16dp"-->
+                    <!--android:layout_marginStart="16dp"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Sam Doe"-->
+                                <!--android:textColor="#1b1b1b"-->
+                                <!--android:textSize="12dp" />-->
+
+                            <!--<RatingBar-->
+                                <!--style="@style/Widget.AppCompat.RatingBar.Small"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:isIndicator="true"-->
+                                <!--android:numStars="1"-->
+                                <!--android:rating="1"-->
+                                <!--android:stepSize="0.1" />-->
+
+                            <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="(3.5)"-->
+                                <!--android:textSize="12dp" />-->
+                        <!--</LinearLayout>-->
+
+                        <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:gravity="end"-->
+                            <!--android:text="July 10"-->
+                            <!--android:textSize="12sp" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<ke.co.noel.hao.customfonts.MyTextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="4dp"-->
+                        <!--android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."-->
+                        <!--android:textSize="12dp" />-->
+
+                <!--</LinearLayout>-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="#601b1b1b"
+        app:itemTextColor="#1b1b1b"
+        app:menu="@menu/details_bottom_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

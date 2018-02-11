@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_book"
+        android:enabled="true"
+        android:icon="@drawable/ic_email_white_24dp"
+        android:title="Request Booking"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_distance"
+        android:enabled="true"
+        android:icon="@drawable/ic_location_on_blue_24px"
+        android:title="Location"
+        app:showAsAction="ifRoom" />
+</menu>

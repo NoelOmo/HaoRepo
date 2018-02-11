@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "650365590782",
+    "firebase_url": "https://projecthao-58cf7.firebaseio.com",
+    "project_id": "projecthao-58cf7",
+    "storage_bucket": "projecthao-58cf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650365590782:android:425428294e740e74",
+        "android_client_info": {
+          "package_name": "ke.co.noel.hao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650365590782-bu1vddmecssc3d454hj49uilirp2celh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0a7FcqrC5M4rg_Y9AaAi2NtKHQef6Ofg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
